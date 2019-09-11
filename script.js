@@ -9,10 +9,11 @@ var url8 = "https://photooboi.com.ua/4770";
 var url9 = "https://photooboi.com.ua/1245/4770.ua";
 var url10 = "https://photooboi.com.ua/images/360b360/4770gif";
 var url11 = "http://photooboi.com.ua/images/360b360/4770gif";
+var url12 = "https://photooboi .com.ua/images/360b360/4770gif";
 
 
 function checkImage(url){
-  let reg = /[https://](\w+)\.(jpg|jpeg|tif|tiff|png|gif)$/;
+  let reg = /[https://](\w+\S)\.(jpg|jpeg|tif|tiff|png|gif)$/;
   console.log(reg.test(url));
 }
 
@@ -27,3 +28,4 @@ checkImage(url8);
 checkImage(url9);
 checkImage(url10);
 checkImage(url11);
+checkImage(url12);
